@@ -1,14 +1,9 @@
-*{
-    background-color: #00008B;
-}
+
 .joke-container {
     display: flex;
     flex-wrap: wrap;
     background-color: #000080;
-  
-    
-    
-  } 
+ } 
   
   .joke-div {
     display:inline-block;
@@ -18,14 +13,10 @@
     padding: 40px;
     margin-left:60px;
     margin-top:40px;
-  
-   
     flex: 0 0 calc(25% - 20px); 
     box-sizing: border-box;
   }
-  
- 
-  
+
 
   .joke-popup {
     position: absolute;
@@ -45,7 +36,6 @@
   .next-button {
     background-color: #000080;
     color: black;
-   
     padding:2% 30% 2% 30%;
     border: none;
     border-radius: 4px;
@@ -73,10 +63,7 @@
   .joke-popup button:hover {
     background-color: #45a049;
   }
-  
-
-
-
+ 
 @keyframes shake {
     0% {
       transform: translateY(-5px);
