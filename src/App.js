@@ -1,25 +1,42 @@
-import logo from './logo.svg';
+import React, { useEffect, useState } from 'react';
+import JokeComponent from './JokeComponent';
 import './App.css';
 
-function App() {
+const App = () => {
+
+  const [categories, setCategories] = useState([]);
+
+  useEffect(() => {
+    fetchCategories();
+  }, []);
+
+  const fetchCategories = async () => {
+    try {
+      const response = await fetch('https://api.chucknorris.io/jokes/categories');
+      const data = await response.json();
+      setCategories(data);
+    } catch (error) {
+      console.error('Error fetching jokes categories:', error);
+    }
+  };
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+     <div className="joke-container">
+      <h1 className="heading">Chuck Norries</h1>
+      <div className="joke-container">
+  
+  {categories.map((category, index) => (
+    <JokeComponent key={index} categories={category} />
+  ))}
+    
+</div>
+    </div> 
+   
+     
+    </>
   );
-}
+};
 
 export default App;

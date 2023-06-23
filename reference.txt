@@ -1,0 +1,9 @@
+Sure, I can give you an overview of how to design a PDF editor with the features you mentioned.
+
+1. Drawing lines: To allow users to draw lines on the PDF, you can provide 
+them with a drawing tool that lets them choose the color, thickness, and style of the
+ line. The tool should also allow users to undo and redo their actions. You can implement
+ this using a canvas element and JavaScript to capture and render the user's drawing.
+
+ Adding comments: Allow users to add comments to the PDF by 
+ clicking on a comment tool and then clicking on the area in the PDF

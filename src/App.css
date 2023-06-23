@@ -1,38 +1,224 @@
-.App {
-  text-align: center;
+/* 
+body {
+    background-color: rgb(82, 86, 89);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+canvas,
+.canvas-container {
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.toolbar {
+    width: 100%;
+    background-color: rgb(50, 54, 57);
+    height: 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+#pdf-container {
+    margin-top: 60px;
+    padding-left: 10px;
+    text-align: center;
+}
+
+button:focus {
+    outline: 0;
+}
+
+.toolbar .tool {
+    display: inline-block;
+    color: #fff;
+    height: 100%;
+    padding-top: 10px;
+    padding-left: 10px;
+    margin-right: 5px;
+}
+
+.toolbar .tool label,
+.toolbar .tool select,
+.toolbar .tool input {
+    display: inline-block;
+    width: auto;
+    height: auto !important;
+    padding: 0;
+
+}
+
+.toolbar .tool input {
+    width: 50px;
+
+}
+
+.toolbar .tool .color-tool {
+    height: 25px;
+    width: 25px;
+    border-radius: 25px;
+    border: 0;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.toolbar .tool .color-tool.active {
+    -webkit-box-shadow: 3px 4px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 3px 4px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 3px 4px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.toolbar .tool:nth-last-child(1) {
+    float: right;
+}
+
+.toolbar .tool .tool-button {
+    background-color: rgb(50, 54, 57);
+    border: 1px solid rgb(50, 54, 57);
+    color: #fff;
+    cursor: pointer;
+}
+
+.toolbar .tool .tool-button:hover,
+.toolbar .tool .tool-button.active {
+    background-color: rgb(82, 86, 89);
+    border-color: rgb(82, 86, 89);
+}
+
+canvas,
+.canvas-container {
+    margin-bottom: 25px;
+}
+
+.canvas-container {
+    margin-left: auto;
+    margin-right: auto;
+} */
+//nexus 
+/* li{
+    display:inline-block;
+    margin:18px;
+    
+}
+.search-icon{
+    margin-right:88px
+}
+.div1{
+    background-color:black;
+    padding:1%
+    
+
+}
+.a{
+    margin-left:18%;
+   color:white
+} */
+
+//cendrol
+/* App.css */
+/* App.css */
+
+/* 
+.main{
+    background-color:blue;
+} */
+
+
+*{
+    background-color: #00008B;
+}
+.joke-container {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #000080;
+  
+    
+    
+  } 
+  
+  .joke-div {
+    display:inline-block;
+    background-color: white;
+    color:purple;
+    border-radius:10px;
+    padding: 40px;
+    margin-left:60px;
+    margin-top:40px;
+    /* margin: 20px; */
+   
+    flex: 0 0 calc(25% - 20px); /* Each div takes 25% width with margin */
+    box-sizing: border-box;
   }
-}
+  
+ 
+  
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .joke-popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #FFDB58;
+    border-radius: 5px;
+    padding: 40px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
   }
-  to {
-    transform: rotate(360deg);
+  
+  .joke-popup p {
+    margin-bottom: 10px;
   }
+  
+  .next-button {
+    background-color: #000080;
+    color: black;
+   
+    padding:2% 30% 2% 30%;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left:12%;
+    margin-bottom:0%;
+  }
+  
+  .close-button{
+    display:inline-block;
+    
+ 
+
+  }
+.h1{
+    display:inline-block;
+   margin-right:75%;
+} 
+
+.jokediv{
+    border:1px solid black;
+    padding:30px
 }
+
+  .joke-popup button:hover {
+    background-color: #45a049;
+  }
+  
+
+
+
+@keyframes shake {
+    0% {
+      transform: translateY(-5px);
+    }
+    50% {
+      transform: translateY(5px);
+    }
+    100% {
+      transform: translateY(-5px);
+    }
+  }
+  
+  .heading {
+    animation: shake 1s infinite;
+    margin-left:40%;
+    color:green;
+  }
+  
